@@ -5,7 +5,7 @@
  */
 function lookupAdminEmail(siteId, e) {
     jQuery.ajax({
-        url: "https://network23.org/wp/wp-admin/network/site-settings.php",
+        url: "https://" + window.location.hostname + "/wp/wp-admin/network/site-settings.php",
         method: "GET",
         data: { id : siteId },
     })
@@ -23,7 +23,7 @@ function lookupAdminEmails() {
     jQuery('table.wp-list-table thead tr').append('<th id = "admin-email">Admin email</th>');
     jQuery('table.wp-list-table tbody tr').each(function() {
         var siteId = jQuery(this).find('.object_id').first().text();
-        console.log(siteId);
+        //console.log(siteId);
         lookupAdminEmail(siteId, this);         
     });
 }
