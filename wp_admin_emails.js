@@ -1,6 +1,7 @@
 /* 
  * Poor person's admin email lookup for wp network sites listing page
- * Paste code into developer tools console, then call lookupAdminEmails(); and optionally exportTableAsCSV(jQuery('table.wp-list-table'));
+ * Paste code into developer tools console, then call lookupSiteAdminEmails(); lookupAllSiteAdministratorEmails(); 
+ * and optionally exportTableAsCSV(jQuery('table.wp-list-table'));
  * @author thebrentc@gmail.com 
  */
   
